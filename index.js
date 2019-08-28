@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 5000
+const port = process.env.PORT == undefined ? 500 : process.env.PORT
 const monk = require('monk')
 const bodyParser = require('body-parser')
 const cors = require('cors')
